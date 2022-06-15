@@ -15,7 +15,7 @@ class ReidDataset(BaseDataset):
         #self.dir = os.path.join(opt.dataroot, 'bounding_box_train')
         market_dir = './dataset/market'
         duke_dir = './dataset/duke'
-        
+        print(self.root)
         if self.root == market_dir:
             dir_A = os.path.join(market_dir, 'bounding_box_train')
             dir_B = os.path.join(duke_dir, 'bounding_box_train')
