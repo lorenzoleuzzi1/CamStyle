@@ -13,8 +13,8 @@ class ReidDataset(BaseDataset):
         self.opt = opt
         self.root = opt.dataroot     
         #self.dir = os.path.join(opt.dataroot, 'bounding_box_train')
-        market_dir = './dataset/market'
-        duke_dir = './dataset/duke'
+        market_dir = './datasets/market'
+        duke_dir = './datasets/duke'
         
         print(self.root)
         
@@ -29,7 +29,7 @@ class ReidDataset(BaseDataset):
         
         if self.opt.isTrain:
             #use market e duke dit
-            self.A_paths = self.preprocess('./dataset/market/bounding_box_train', cam_id=opt.camA)
+            self.A_paths = self.preprocess(dir_A, cam_id=opt.camA)
             self.B_paths = self.preprocess(dir_B, cam_id=opt.camB)
         else:
             self.A_paths = self.preprocess(self.dir, cam_id=opt.camA, extra_cam_id=opt.camB)
