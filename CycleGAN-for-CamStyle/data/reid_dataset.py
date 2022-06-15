@@ -12,9 +12,12 @@ class ReidDataset(BaseDataset):
     def initialize(self, opt):
         self.opt = opt
         self.root = opt.dataroot
+        #market_dir
+        #duke_dir
         self.dir = os.path.join(opt.dataroot, 'bounding_box_train')
 
         if self.opt.isTrain:
+            #use market e duke dit
             self.A_paths = self.preprocess(self.dir, cam_id=opt.camA)
             self.B_paths = self.preprocess(self.dir, cam_id=opt.camB)
         else:
