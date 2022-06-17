@@ -44,7 +44,8 @@ if __name__ == '__main__':
             if total_steps % opt.print_freq == 0:
                 losses = model.get_current_losses()
                 t = (time.time() - iter_start_time) / opt.batchSize
-                visuals = model.get_current_visuals()  
+                visuals = model.get_current_visuals()
+                img_path = model.get_image_paths()
                 save_images(visuals, img_path, opt.camA, opt.camB, save_root_train)
                 visualizer.print_current_losses(epoch, epoch_iter, losses, t, t_data)
                 #if opt.display_id > 0:
