@@ -54,7 +54,7 @@ def save_images(visuals, image_path, camA=1, camB=2, save_root=None):
 
 class Visualizer():
     def __init__(self, opt):
-        #self.display_id = opt.display_id
+        self.display_id = opt.display_id
         self.use_html = opt.isTrain and not opt.no_html
         self.win_size = opt.display_winsize
         self.name = opt.name
