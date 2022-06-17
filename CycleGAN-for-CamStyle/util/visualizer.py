@@ -55,21 +55,23 @@ def save_images(visuals, image_path, camA=1, camB=2, save_root=None):
 class Visualizer():
     def __init__(self, opt):
         self.display_id = opt.display_id
-        self.use_html = opt.isTrain and not opt.no_html
+        #self.use_html = opt.isTrain and not opt.no_html
+        self.use_html = false
         self.win_size = opt.display_winsize
         self.name = opt.name
         self.opt = opt
         self.saved = False
+        
         if self.display_id > 0:
             import visdom
             self.ncols = opt.display_ncols
             self.vis = visdom.Visdom(server=opt.display_server, port=opt.display_port)
-            
-        if self.use_html:
-            self.web_dir = os.path.join(opt.checkpoints_dir, opt.name, 'web')
-            self.img_dir = os.path.join(self.web_dir, 'images')
-            print('create web directory %s...' % self.web_dir)
-            util.mkdirs([self.web_dir, self.img_dir])
+            #self.web_dir = os.path.join(opt.checkpoints_dir, opt.name, 'web')
+        
+        self.img_dir = os.path.join(opt.checkpoints_dir, opt.name, 'images')
+        print('create images directory %s...' % self.img_dir)
+        util.mkdirs(self.img_dir)
+        
         self.log_name = os.path.join(opt.checkpoints_dir, opt.name, 'loss_log.txt')
         with open(self.log_name, "a") as log_file:
             now = time.strftime("%c")
