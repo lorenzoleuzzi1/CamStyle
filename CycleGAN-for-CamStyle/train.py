@@ -1,4 +1,5 @@
 import time
+import os
 from options.train_options import TrainOptions
 from data import CreateDataLoader
 from models import create_model
@@ -10,6 +11,8 @@ if __name__ == '__main__':
     dataset = data_loader.load_data()
     dataset_size = len(data_loader)
     print('#training images = %d' % dataset_size)
+    
+    save_root_train = os.path.join(opt.checkpoints_dir, opt.name, 'images')
 
     model = create_model(opt)
     model.setup(opt)
@@ -40,6 +43,8 @@ if __name__ == '__main__':
             if total_steps % opt.print_freq == 0:
                 losses = model.get_current_losses()
                 t = (time.time() - iter_start_time) / opt.batchSize
+                visuals = model.get_current_visuals()  
+                save_images(visuals, img_path, opt.camA, opt.camB, save_root_train)
                 visualizer.print_current_losses(epoch, epoch_iter, losses, t, t_data)
                 #if opt.display_id > 0:
                    # visualizer.plot_current_losses(epoch, float(epoch_iter) / dataset_size, opt, losses)
@@ -55,10 +60,7 @@ if __name__ == '__main__':
                   (epoch, total_steps))
             model.save_networks('latest')
             model.save_networks(epoch)
-        ####
-        save_root_train = os.path.join(opt.checkpoints_dir, opt.name, 'images')
-        visuals = model.get_current_visuals()  
-        save_images(visuals, img_path, opt.camA, opt.camB, save_root_train)
+        
         print('End of epoch %d / %d \t Time Taken: %d sec' %
               (epoch, opt.niter + opt.niter_decay, time.time() - epoch_start_time))
         model.update_learning_rate()
