@@ -56,7 +56,7 @@ if __name__ == '__main__':
             model.save_networks('latest')
             model.save_networks(epoch)
         ####
-        save_root_train('/content/drive/MyDrive/tirocinio/CamStyle')
+        save_root_train = os.path.join(opt.checkpoints_dir, opt.name, 'images')
         visuals = model.get_current_visuals()  
         save_images(visuals, img_path, opt.camA, opt.camB, save_root_train)
         print('End of epoch %d / %d \t Time Taken: %d sec' %
