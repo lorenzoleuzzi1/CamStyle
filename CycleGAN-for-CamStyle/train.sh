@@ -5,6 +5,7 @@ pip install -r /content/CamStyle/CycleGAN-for-CamStyle/requirements.txt
 pip install scipy==1.2.1
 #python -m visdom.server
 
+#cd insade the folder CycleGAN-for-CamStyle
 
 sh train_market.sh
 sh train_duke.sh
