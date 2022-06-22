@@ -38,7 +38,8 @@ if __name__ == '__main__':
             if total_steps % opt.display_freq == 0:
                 visuals = model.get_current_visuals()
                 img_path = model.get_image_paths()
-                save_images(visuals, img_path, opt.camA, opt.camB, save_root_train)
+                epoch_steps = str(epoch) + str(total_steps % epoch)
+                save_images(epoch_steps, visuals, img_path, opt.camA, opt.camB, save_root_train)
 
             if total_steps % opt.print_freq == 0:
                 losses = model.get_current_losses()
