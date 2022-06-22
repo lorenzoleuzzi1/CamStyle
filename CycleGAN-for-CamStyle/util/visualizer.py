@@ -18,7 +18,7 @@ def mkdir_if_missing(dir_path):
 
 
 # save image to the disk
-def save_images(visuals, image_path, camA=1, camB=2, save_root=None):
+def save_images(epoch_steps, visuals, image_path, camA=1, camB=2, save_root=None):
     mkdir_if_missing(save_root)
     short_path = ntpath.basename(image_path[0])
     name = os.path.splitext(short_path)[0]
@@ -43,7 +43,7 @@ def save_images(visuals, image_path, camA=1, camB=2, save_root=None):
         elif label == 'fake_A':
             label = 'fake_' + str(camB) + 'to' + str(camA)
 
-        image_name = '%s_%s.jpg' % (name, label)
+        image_name = '%s_%s_%s.jpg' % (epoch_steps, name, label)
         save_path = os.path.join(save_root, image_name)
         util.save_image(im, save_path)
 
