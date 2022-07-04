@@ -20,7 +20,9 @@ if __name__ == '__main__':
     visualizer = Visualizer(opt)
     total_steps = 0
 
-    for epoch in range(opt.epoch_count, opt.niter + opt.niter_decay + 1):
+    #for epoch in range(opt.epoch_count, opt.niter + opt.niter_decay + 1):
+    
+    for epoch in range(opt.epoch_count, 40):
         epoch_start_time = time.time()
         iter_data_time = time.time()
         epoch_iter = 0
@@ -61,5 +63,6 @@ if __name__ == '__main__':
             model.save_networks(epoch)
         
         print('End of epoch %d / %d \t Time Taken: %d sec' %
-              (epoch, opt.niter + opt.niter_decay, time.time() - epoch_start_time))
+              (epoch, 40, time.time() - epoch_start_time))
+              #(epoch, opt.niter + opt.niter_decay, time.time() - epoch_start_time))
         model.update_learning_rate()
