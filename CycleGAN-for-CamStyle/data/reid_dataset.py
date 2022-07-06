@@ -12,7 +12,7 @@ class ReidDataset(BaseDataset):
     def initialize(self, opt):
         self.opt = opt
         self.root = opt.dataroot     
-        #self.dir = os.path.join(opt.dataroot, 'bounding_box_train')
+        self.dir = os.path.join(opt.dataroot, 'bounding_box_train')
         market_dir = './datasets/market'
         duke_dir = './datasets/duke'
         
