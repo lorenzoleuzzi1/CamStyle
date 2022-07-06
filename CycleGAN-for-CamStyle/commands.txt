@@ -1,0 +1,4 @@
+source cGAN/bin/activate
+
+nohup sh train_market.sh > nohup/market.out &
+nohup sh train_duke.sh > nohup/duke.out &
