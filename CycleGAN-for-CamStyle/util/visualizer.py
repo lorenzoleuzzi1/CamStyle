@@ -3,8 +3,8 @@ import os
 import ntpath
 import time
 from . import util
-from . import html
-from scipy.misc import imresize
+#from . import html
+#from scipy.misc import imresize
 import errno
 
 
