@@ -29,4 +29,4 @@ if __name__ == '__main__':
         img_path = model.get_image_paths()
         if i % 5 == 0:
             print('processing (%04d)-th image... %s' % (i, img_path))
-        save_images(50, visuals, img_path, opt.camA, opt.camB, opt.save_root)
+        save_images_t(visuals, img_path, opt.camA, opt.camB, opt.save_root)
