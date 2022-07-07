@@ -51,6 +51,40 @@ def save_images(epoch_steps, visuals, image_path, camA=1, camB=2, save_root=None
         txts.append(label)
         links.append(image_name)
 
+def save_images_t(visuals, image_path, camA=1, camB=2, save_root=None):
+    mkdir_if_missing(save_root)
+    short_path = ntpath.basename(image_path[0])
+    name = os.path.splitext(short_path)[0]
+
+    ims = []
+    txts = []
+    links = []
+
+    for label, im_data in visuals.items():
+        im = util.tensor2im(im_data)
+        if label in ('rec_A', 'rec_B', 'real_A', 'real_B'):
+            continue
+        import re
+        pattern = re.compile(r'([-\d]+)_c(\d)')
+        pid, cam = map(int, pattern.search(name).groups())
+        print(name, cam)
+
+        if not (cam == camA and label == 'fake_B') and not (cam == camB and label == 'fake_A'):
+            continue
+        if label == 'fake_B':
+            label = 'fake_' + str(camA) + 'to' + str(camB)
+        elif label == 'fake_A':
+            label = 'fake_' + str(camB) + 'to' + str(camA)
+
+        image_name = '%s_%s.jpg' % (name, label)
+        save_path = os.path.join(save_root, image_name)
+        util.save_image(im, save_path)
+
+        ims.append(image_name)
+        txts.append(label)
+        links.append(image_name)
+
+      
 
 class Visualizer():
     def __init__(self, opt):
