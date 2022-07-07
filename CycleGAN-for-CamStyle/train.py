@@ -4,7 +4,7 @@ from options.train_options import TrainOptions
 from data import CreateDataLoader
 from models import create_model
 from util.visualizer import Visualizer
-from util.visualizer import save_images_t
+from util.visualizer import save_images
 
 if __name__ == '__main__':
     opt = TrainOptions().parse()
