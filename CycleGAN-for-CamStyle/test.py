@@ -2,7 +2,7 @@ import os
 from options.test_options import TestOptions
 from data import CreateDataLoader
 from models import create_model
-from util.visualizer import save_images
+from util.visualizer import save_images_t
 from util import html
 
 
@@ -21,12 +21,12 @@ if __name__ == '__main__':
     model.setup(opt)
     # test
     for i, data in enumerate(dataset):
-        # if i >= opt.how_many:
-            # break
+        #if i >= opt.how_many:
+            #break
         model.set_input(data)
         model.test()
         visuals = model.get_current_visuals()
         img_path = model.get_image_paths()
         if i % 5 == 0:
             print('processing (%04d)-th image... %s' % (i, img_path))
-        save_images(visuals, img_path, opt.camA, opt.camB, opt.save_root)
+        save_images_t(visuals, img_path, opt.camA, opt.camB, opt.save_root)

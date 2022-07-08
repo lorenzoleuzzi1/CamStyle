@@ -1,7 +1,7 @@
 from __future__ import absolute_import
 import os.path as osp
 
-from PIL import Image
+from PIL import Image, ImageFile
 
 
 class Preprocessor(object):
@@ -20,6 +20,7 @@ class Preprocessor(object):
         return self._get_single_item(indices)
 
     def _get_single_item(self, index):
+        ImageFile.LOAD_TRUNCATED_IMAGES = True
         fname, pid, camid = self.dataset[index]
         fpath = fname
         if self.root is not None:
