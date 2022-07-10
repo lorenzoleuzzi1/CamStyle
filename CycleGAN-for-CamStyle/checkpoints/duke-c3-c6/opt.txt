@@ -5,7 +5,7 @@
                      camB: 6                             	[default: 2]
           checkpoints_dir: ./checkpoints                 
            continue_train: False                         
-                 dataroot: ./datasets/market             	[default: None]
+                 dataroot: ./datasets/duke             	[default: None]
              dataset_mode: reid                          
              display_freq: 400                           
                display_id: -1                            
@@ -30,7 +30,7 @@
                     model: cycle_gan                     
                  nThreads: 4                             
                n_layers_D: 3                             
-                     name: market-c3-c6                  	[default: experiment_name]
+                     name: duke-c3-c6                  	[default: experiment_name]
                       ndf: 64                            
                       ngf: 64                            
                     niter: 30                            
