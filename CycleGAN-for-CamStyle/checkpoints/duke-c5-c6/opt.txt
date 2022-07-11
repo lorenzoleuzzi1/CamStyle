@@ -4,7 +4,7 @@
                      camA: 5                             	[default: 1]
                      camB: 6                             	[default: 2]
           checkpoints_dir: ./checkpoints                 
-           continue_train: False                         
+           continue_train: True                          	[default: False]
                  dataroot: ./datasets/duke               	[default: None]
              dataset_mode: reid                          
              display_freq: 1000                          
@@ -13,7 +13,7 @@
              display_port: 8097                          
            display_server: http://localhost              
           display_winsize: 256                           
-              epoch_count: 1                             
+              epoch_count: 8                             	[default: 1]
                  fineSize: 256                           
                   gpu_ids: 0                             
                 init_type: normal                        
