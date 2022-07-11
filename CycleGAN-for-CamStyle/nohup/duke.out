@@ -9729,6 +9729,7 @@ learning rate = 0.0000769
 (epoch: 27, iters: 2238, time: 0.606, data: 0.001) D_A: 0.278 G_A: 0.342 cycle_A: 0.495 idt_A: 0.158 D_B: 0.105 G_B: 0.327 cycle_B: 0.568 idt_B: 0.129 
 End of epoch 27 / 32 	 Time Taken: 1309 sec
 learning rate = 0.0000615
+<<<<<<< HEAD
 (epoch: 28, iters: 1, time: 0.561, data: 0.009) D_A: 0.075 G_A: 0.598 cycle_A: 0.498 idt_A: 0.161 D_B: 0.042 G_B: 0.701 cycle_B: 0.452 idt_B: 0.145 
 (epoch: 28, iters: 101, time: 0.592, data: 0.016) D_A: 0.082 G_A: 0.377 cycle_A: 0.529 idt_A: 0.170 D_B: 0.094 G_B: 0.528 cycle_B: 0.620 idt_B: 0.124 
 (epoch: 28, iters: 201, time: 0.594, data: 0.001) D_A: 0.365 G_A: 0.302 cycle_A: 0.425 idt_A: 0.153 D_B: 0.299 G_B: 0.571 cycle_B: 0.501 idt_B: 0.205 
@@ -14895,3 +14896,5 @@ learning rate = 0.0002000
 (epoch: 14, iters: 2319, time: 0.596, data: 0.001) D_A: 0.103 G_A: 0.396 cycle_A: 0.674 idt_A: 0.378 D_B: 0.246 G_B: 0.740 cycle_B: 0.541 idt_B: 0.230 
 End of epoch 14 / 32 	 Time Taken: 1306 sec
 learning rate = 0.0002000
+=======
+>>>>>>> 8e6e03ff8026853f8af052c447efa6aab7cf4098

@@ -1,4 +1,3 @@
-================ Training Loss (Fri Jul  8 20:21:35 2022) ================
 (epoch: 1, iters: 100, time: 0.583, data: 0.238) D_A: 0.224 G_A: 0.382 cycle_A: 1.840 idt_A: 0.498 D_B: 0.226 G_B: 0.405 cycle_B: 1.026 idt_B: 0.842 
 (epoch: 1, iters: 200, time: 0.599, data: 0.002) D_A: 0.292 G_A: 0.273 cycle_A: 1.790 idt_A: 0.813 D_B: 0.322 G_B: 0.439 cycle_B: 1.928 idt_B: 0.975 
 (epoch: 1, iters: 300, time: 0.596, data: 0.001) D_A: 0.277 G_A: 0.360 cycle_A: 1.132 idt_A: 0.399 D_B: 0.256 G_B: 0.494 cycle_B: 0.780 idt_B: 0.538 
@@ -640,6 +639,7 @@
 (epoch: 28, iters: 801, time: 0.601, data: 0.005) D_A: 0.222 G_A: 0.941 cycle_A: 0.456 idt_A: 0.154 D_B: 0.315 G_B: 0.101 cycle_B: 0.616 idt_B: 0.247 
 (epoch: 28, iters: 901, time: 0.601, data: 0.001) D_A: 0.072 G_A: 0.558 cycle_A: 0.544 idt_A: 0.121 D_B: 0.087 G_B: 0.696 cycle_B: 0.496 idt_B: 0.151 
 (epoch: 28, iters: 1001, time: 0.592, data: 0.010) D_A: 0.136 G_A: 0.422 cycle_A: 0.647 idt_A: 0.187 D_B: 0.184 G_B: 0.335 cycle_B: 0.705 idt_B: 0.179 
+<<<<<<< HEAD
 (epoch: 28, iters: 1101, time: 0.600, data: 0.001) D_A: 0.217 G_A: 0.339 cycle_A: 0.546 idt_A: 0.131 D_B: 0.064 G_B: 0.707 cycle_B: 0.508 idt_B: 0.170 
 (epoch: 28, iters: 1201, time: 0.600, data: 0.015) D_A: 0.145 G_A: 0.285 cycle_A: 0.614 idt_A: 0.141 D_B: 0.053 G_B: 0.803 cycle_B: 0.589 idt_B: 0.179 
 (epoch: 28, iters: 1301, time: 0.594, data: 0.006) D_A: 0.133 G_A: 0.472 cycle_A: 0.552 idt_A: 0.214 D_B: 0.270 G_B: 0.933 cycle_B: 0.464 idt_B: 0.267 
