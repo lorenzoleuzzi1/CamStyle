@@ -29,3 +29,6 @@ python train.py --dataroot ./datasets/market --name market-c4-c8 --camA 4 --camB
 python train.py --dataroot ./datasets/market --name market-c5-c6 --camA 5 --camB 6
 python train.py --dataroot ./datasets/market --name market-c5-c7 --camA 5 --camB 7
 python train.py --dataroot ./datasets/market --name market-c5-c8 --camA 5 --camB 8
+
+python train.py --dataroot ./datasets/market --name market-c6-c7 --camA 6 --camB 7
+python train.py --dataroot ./datasets/market --name market-c6-c8 --camA 6 --camB 8
