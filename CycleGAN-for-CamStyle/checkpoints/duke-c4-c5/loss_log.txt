@@ -1,9 +1,4 @@
-================ Training Loss (Thu Jul  7 16:57:39 2022) ================
-================ Training Loss (Thu Jul  7 17:02:51 2022) ================
-================ Training Loss (Thu Jul  7 17:10:31 2022) ================
-================ Training Loss (Thu Jul  7 17:16:48 2022) ================
-================ Training Loss (Thu Jul  7 17:18:59 2022) ================
-================ Training Loss (Thu Jul  7 17:34:09 2022) ================
+
 (epoch: 1, iters: 100, time: 1.847, data: 9.508) D_A: 0.196 G_A: 0.413 cycle_A: 2.466 idt_A: 0.823 D_B: 0.179 G_B: 0.682 cycle_B: 1.675 idt_B: 1.032 
 (epoch: 1, iters: 200, time: 1.859, data: 0.001) D_A: 0.328 G_A: 0.624 cycle_A: 2.633 idt_A: 0.588 D_B: 0.254 G_B: 0.314 cycle_B: 1.313 idt_B: 1.318 
 (epoch: 1, iters: 300, time: 1.857, data: 0.001) D_A: 0.211 G_A: 0.453 cycle_A: 1.899 idt_A: 0.649 D_B: 0.452 G_B: 0.069 cycle_B: 1.275 idt_B: 0.931 
