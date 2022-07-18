@@ -1352,3 +1352,4 @@
 (epoch: 50, iters: 2457, time: 0.586, data: 0.002) D_A: 0.110 G_A: 0.650 cycle_A: 0.504 idt_A: 0.141 D_B: 0.044 G_B: 0.843 cycle_B: 0.395 idt_B: 0.172 
 (epoch: 50, iters: 2557, time: 0.599, data: 0.019) D_A: 0.165 G_A: 0.567 cycle_A: 0.479 idt_A: 0.114 D_B: 0.112 G_B: 1.372 cycle_B: 0.332 idt_B: 0.130 
 (epoch: 50, iters: 2657, time: 0.603, data: 0.002) D_A: 0.079 G_A: 0.613 cycle_A: 0.466 idt_A: 0.104 D_B: 0.093 G_B: 0.647 cycle_B: 0.270 idt_B: 0.125 
+================ Training Loss (Mon Jul 11 11:19:41 2022) ================

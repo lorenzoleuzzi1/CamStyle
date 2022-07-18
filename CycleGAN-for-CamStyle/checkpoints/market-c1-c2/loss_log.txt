@@ -1012,3 +1012,14 @@
 (epoch: 50, iters: 1767, time: 1.269, data: 0.001) D_A: 0.136 G_A: 0.625 cycle_A: 0.502 idt_A: 0.120 D_B: 0.056 G_B: 1.023 cycle_B: 0.479 idt_B: 0.136 
 (epoch: 50, iters: 1867, time: 1.265, data: 0.004) D_A: 0.129 G_A: 0.652 cycle_A: 0.391 idt_A: 0.246 D_B: 0.128 G_B: 0.367 cycle_B: 0.518 idt_B: 0.151 
 (epoch: 50, iters: 1967, time: 1.279, data: 0.001) D_A: 0.161 G_A: 0.274 cycle_A: 0.688 idt_A: 0.157 D_B: 0.062 G_B: 0.486 cycle_B: 0.458 idt_B: 0.430 
+================ Training Loss (Mon Jul 11 11:14:20 2022) ================
+(epoch: 1, iters: 100, time: 1.272, data: 0.193) D_A: 0.307 G_A: 0.494 cycle_A: 1.301 idt_A: 0.701 D_B: 0.244 G_B: 0.288 cycle_B: 1.574 idt_B: 0.655 
+================ Training Loss (Mon Jul 11 11:17:06 2022) ================
+(epoch: 1, iters: 200, time: 1.296, data: 0.002) D_A: 0.401 G_A: 0.404 cycle_A: 1.688 idt_A: 1.828 D_B: 0.283 G_B: 0.361 cycle_B: 3.813 idt_B: 0.837 
+(epoch: 1, iters: 300, time: 1.282, data: 0.002) D_A: 0.230 G_A: 0.495 cycle_A: 1.124 idt_A: 0.483 D_B: 0.212 G_B: 0.559 cycle_B: 1.408 idt_B: 0.455 
+(epoch: 1, iters: 400, time: 1.273, data: 0.002) D_A: 0.225 G_A: 0.583 cycle_A: 1.187 idt_A: 0.333 D_B: 0.274 G_B: 0.432 cycle_B: 0.697 idt_B: 0.543 
+(epoch: 1, iters: 500, time: 1.274, data: 0.003) D_A: 0.173 G_A: 0.391 cycle_A: 0.776 idt_A: 1.961 D_B: 0.183 G_B: 0.407 cycle_B: 3.945 idt_B: 0.388 
+(epoch: 1, iters: 600, time: 1.276, data: 0.002) D_A: 0.306 G_A: 0.380 cycle_A: 0.954 idt_A: 0.548 D_B: 0.330 G_B: 0.130 cycle_B: 1.123 idt_B: 0.483 
+(epoch: 1, iters: 700, time: 1.279, data: 0.001) D_A: 0.263 G_A: 0.142 cycle_A: 1.190 idt_A: 1.412 D_B: 0.173 G_B: 0.235 cycle_B: 2.745 idt_B: 0.593 
+================ Training Loss (Mon Jul 11 11:32:45 2022) ================
+(epoch: 1, iters: 100, time: 0.588, data: 0.188) D_A: 0.468 G_A: 0.566 cycle_A: 2.239 idt_A: 0.664 D_B: 0.293 G_B: 0.293 cycle_B: 1.548 idt_B: 1.033 

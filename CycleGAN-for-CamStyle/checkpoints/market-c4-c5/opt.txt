@@ -7,7 +7,7 @@
            continue_train: False                         
                  dataroot: ./datasets/market             	[default: None]
              dataset_mode: reid                          
-             display_freq: 400                           
+             display_freq: 1000                          
                display_id: -1                            
             display_ncols: 0                             
              display_port: 8097                          
@@ -33,8 +33,8 @@
                      name: market-c4-c5                  	[default: experiment_name]
                       ndf: 64                            
                       ngf: 64                            
-                    niter: 30                            
-              niter_decay: 20                            
+                    niter: 20                            
+              niter_decay: 12                            
                no_dropout: False                         
                   no_flip: False                         
                   no_html: False                         

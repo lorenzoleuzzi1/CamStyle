@@ -5,6 +5,7 @@ from data import CreateDataLoader
 from models import create_model
 from util.visualizer import Visualizer
 from util.visualizer import save_images
+import sys
 
 if __name__ == '__main__':
     opt = TrainOptions().parse()
@@ -14,6 +15,10 @@ if __name__ == '__main__':
     print('#training images = %d' % dataset_size)
     
     save_root_train = os.path.join(opt.checkpoints_dir, opt.name, 'images')
+    
+    if (os.path.isdir(save_root_train) ):
+        print( save_root_train + " already trained. Exiting.\n" )
+        sys.exit(0)
 
     model = create_model(opt)
     model.setup(opt)
